@@ -1,0 +1,62 @@
+.about-container {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  height: auto; /* Allow to adjust with content */
+  padding: 20px; /* Add some padding if needed */
+  background-color: rgb(2, 4, 52);
+}
+
+.content {
+    flex: 1; /* Take up half the screen */
+    padding: 20px; /* Add some padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.logo {
+    flex: 1; /* Take up half the screen */
+    display: flex;
+    justify-content: center; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    margin-top: 15px;
+}
+
+.logo img {
+    max-width: 80%; /* Make sure the logo is responsive */
+    max-height: 80%; /* Make sure the logo fits within the container */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        height: auto; /* Allow height to adjust for smaller screens */
+    }
+
+    .content {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .logo {
+        margin-top: 10px; /* Reduce margin on smaller screens */
+    }
+
+    .logo img {
+        max-width: 90%; /* Increase the size slightly on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 5px; /* Further reduce padding on mobile */
+    }
+
+    .logo img {
+        max-width: 100%; /* Allow logo to take full width on mobile */
+        max-height: 70%; /* Limit height to keep aspect ratio */
+    }
+}

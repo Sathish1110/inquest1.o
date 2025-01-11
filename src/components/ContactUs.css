@@ -1,0 +1,137 @@
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(2, 4, 52); 
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: aqua;
+  box-shadow: 2px solid rgb(55, 0, 255);
+}
+
+/* Coordinator Grid */
+.coordinator-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Coordinator Card */
+.coordinator-card {
+  border: 1px solid aqua;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  /* padding: 20px; */
+  transition: box-shadow 0.3s ease;
+  height: 190px; /* Fixed height for uniformity */
+  width: 280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Use flexbox to center items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative;
+  background-color: black;
+  transition: all 1s ease-in;
+ 
+}
+
+.coordinator-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px rgba(173, 216, 230, 0.8);
+  border: 2px solid lightblue;
+}
+
+.coordinator-card .profile {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  position: absolute;
+  top: -25%;
+  border: 2px solid aqua;
+  z-index: 3;
+
+}
+
+.coordinator-card .banner {
+  width: 100%;
+  position: relative;
+  top: -26.3%;
+  height: 40%;
+  z-index: 2;
+  border-radius: 8px;
+  border-top: 1px solid aqua;
+  
+}
+
+.coordinator-card p {
+  /* margin: 10px 0 0; */
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none; 
+  color: aqua;
+}
+
+
+
+@media (max-width: 1214px) {
+  .coordinator-grid {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1115px) {
+  .coordinator-grid {
+    width: 90%;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 570px) {
+  .coordinator-grid {
+    width: 90%;
+    gap: 30px;
+  }
+  .coordinator-grid .coordinator-card {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-container h1 {
+      text-align: center; /* Center the heading on smaller screens */
+      margin: 0; /* Remove left margin */
+  }
+
+  .coordinator-card {
+    height: 200px; /* Fixed height for uniformity */
+    width: 280px;
+  }
+
+  .coordinator-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+      gap: 15px; /* Reduce gap between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .coordinator-card {
+      width: 100%; /* Full width on mobile */
+      margin: 0 auto; /* Center card horizontally */
+  }
+
+  .coordinator-card img {
+      width: 80px; /* Smaller image size */
+      height: 80px; /* Smaller image size */
+  }
+
+  .coordinator-card p {
+      font-size: 14px; /* Smaller font size for text */
+  }
+}
