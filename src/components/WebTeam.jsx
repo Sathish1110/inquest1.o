@@ -28,7 +28,7 @@ const webDevelopers = [
     linkedin: "https://www.linkedin.com/in/sathish-waran-s-165661257"
   },
   {
-    name: "SELVA MANIKANTHAN",
+    name: "SELVAMANIKANDAN S",
     bannerImg: b3, 
     profileImg: selva, 
     linkedin: "https://www.linkedin.com/in/selvamanikandan-s-8792b3250"

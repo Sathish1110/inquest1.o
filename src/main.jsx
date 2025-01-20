@@ -6,6 +6,7 @@ import './index.css'; // Your CSS styles
 // Render the App component within StrictMode
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App /> {/* Only render App here */}
+    <App />
+     {/* Only render App here */}
   </StrictMode>
 );

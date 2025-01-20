@@ -25,13 +25,13 @@
   width: 80%;
   justify-content: center;
   flex-wrap: wrap;
-  
+  gap: 20px; /* Add some gap between the cards */
 }
 
 /* Default styles for larger screens */
 .events .event {
   width: 50%;
-  height: 200px;
+  height: auto; /* Let the height adjust automatically */
   flex-grow: 1;
   margin: 10px;
   display: flex;
@@ -43,13 +43,14 @@
   width: 200px;
   height: 200px;
   border-radius: 100px;
+  object-fit: cover; /* Ensure images cover the space without distortion */
 }
 
 /* Media query for screens 1766px or smaller */
 @media (max-width: 1766px) {
   .events .event {
     width: 35%;
-    height: 300px; /* Decrease height for smaller screens */
+    height: auto; /* Allow the height to adjust automatically */
   }
 }
 
@@ -57,7 +58,7 @@
 @media (max-width: 1024px) {
   .events .event {
     width: 90%; /* Full width on smaller screens */
-    height: 800px; /* Adjust height further */
+    height: auto; /* Allow height to adjust automatically */
   }
 }
 
@@ -65,7 +66,7 @@
 @media (max-width: 768px) {
   .events .event {
     width: 90%; /* Full width */
-    height: 200px; /* Further height reduction */
+    height: auto; /* Allow height to adjust automatically */
   }
 }
 
@@ -73,6 +74,6 @@
 @media (max-width: 480px) {
   .events .event {
     width: 100%;
-    height: 700px; /* Smaller height for mobile */
+    height: auto; /* Allow height to adjust based on content */
   }
 }

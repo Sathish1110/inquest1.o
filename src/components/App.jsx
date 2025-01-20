@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react'; 
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; 
+import React, { useState, useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Event from './Event';
 import WebTeam from './WebTeam';
-import About from './about'; 
-import ContactUs from './ContactUs'; 
+import About from './about';
+import ContactUs from './ContactUs';
 import DayDetail from './DayDetail';
-import Footer from './Footer'
-import inquesta from '../assets/inquesta.png'
-import background from '../assets/background.mp4'
+import Footer from './Footer';
+import inquesta from '../assets/inquesta.png';
+import background1 from '../assets/background1.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -16,7 +16,7 @@ function Home({ aboutRef, contactRef }) {
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    const eventDate = new Date("2024-11-25T00:00:00").getTime(); 
+    const eventDate = new Date("2025-02-02T00:00:00").getTime(); // Updated event date
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -40,83 +40,87 @@ function Home({ aboutRef, contactRef }) {
   }, []);
 
   useEffect(() => {
-    AOS.init(); // Initialize AOS when the component is mounted
+    AOS.init();
   }, []);
 
   return (
     <div className="container">
-      <video 
-        src={background} 
-        autoPlay 
-        loop 
-        muted 
-        style={{ 
-          width: '100%', 
-          height: '100vh', 
-          objectFit: 'cover', 
-          position: 'absolute', // To keep it in the background
+      <video
+        src={background1}
+        autoPlay
+        loop
+        muted
+        style={{
+          width: '100%',
+          height: '100vh',
+          objectFit: 'cover',
+          position: 'absolute',
           top: 0,
           left: 0,
-          zIndex: -1 // To place it behind other elements
-        }} 
+          zIndex: -1
+        }}
       />
 
       <div className='content'>
         <div style={{ marginBottom: '30px' }}>
-          <h1 style={{fontSize:'45px'}} data-aos="zoom-in" data-aos-duration="1800">SRI SAIRAM ENGINEERING COLLEGE</h1>
+          <h1 style={{ fontSize: '45px' }} data-aos="zoom-in" data-aos-duration="1800">
+            SRI SAIRAM ENGINEERING COLLEGE
+          </h1>
           <h2 data-aos="flip-up" data-aos-duration="1200" data-aos-delay="1000">&</h2>
-          <h1 style={{fontSize:'45px'}} data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="1500">NDLI CLUB</h1>
+          <h1 style={{ fontSize: '45px' }} data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="1500">
+            NDLI CLUB
+          </h1>
         </div>
 
-        <h2 style={{ marginBottom: '25px' }} data-aos="flip-down" data-aos-duration="1500" data-aos-delay="2200">Presents</h2>
+        <h2 style={{ marginBottom: '25px' }} data-aos="flip-down" data-aos-duration="1500" data-aos-delay="2200">
+          Presents
+        </h2>
 
         <div style={{ marginBottom: '30px' }} data-aos="zoom-out" data-aos-duration="1800" data-aos-delay="2700">
-          <img src={inquesta} alt="" className='main-logo'/>
+          <img src={inquesta} alt="Main Logo" className="main-logo" />
         </div>
 
         <div className="timer">
           {timeLeft.message ? (
             <p>{timeLeft.message}</p>
           ) : (
-            <p style={{fontSize:'45px'}}>
+            <p style={{ fontSize: '45px' }}>
               {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
             </p>
           )}
         </div>
       </div>
-
     </div>
   );
 }
 
 const App = () => {
-  const aboutRef = useRef(null); // Create a ref for the About section
-  const contactRef = useRef(null); // Create a ref for the Contact Us section
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScrollToAbout = (e) => {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault();
     if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth' }); // Scroll to About section smoothly
-      setIsMenuOpen(false); // Close menu after clicking
+      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
     }
   };
 
   const handleScrollToContact = (e) => {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault();
     if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth' }); // Scroll to Contact Us section smoothly
-      setIsMenuOpen(false); // Close menu after clicking
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
     }
   };
 
   return (
     <Router>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        &#9776; {/* This represents the hamburger icon */}
+        &#9776;
       </div>
 
-      {/* Menu Links */}
       {isMenuOpen && (
         <nav className="menu">
           <ul>
@@ -130,20 +134,16 @@ const App = () => {
       )}
 
       <Routes>
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
             <>
               <Home aboutRef={aboutRef} contactRef={contactRef} />
-              <div ref={aboutRef}>
-                <About />
-              </div>
-              <div ref={contactRef}>
-                <ContactUs />
-              </div>
-              <Footer />
+              <div ref={aboutRef}><About /></div>
+              <div ref={contactRef}><ContactUs /></div>
+              <Footer /> {/* Footer included here */}
             </>
-          } 
+          }
         />
         <Route path="/event" element={<Event />} />
         <Route path="/tech-team" element={<WebTeam />} />
