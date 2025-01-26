@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import './ContactUs.css'; 
+import vishwa from '../assets/vishwa.jpg'
 import praveen from '../assets/praveen.jpg'
 import mahati from '../assets/mahati.jpg'
 import sivagami from '../assets/sivagamimam.jpg'
+import th from '../assets/th.jpg'
 import b1 from '../assets/b1.jpg'
 import roshini from '../assets/roshini.png'
 import b3 from '../assets/b3.jpg'
@@ -22,13 +24,19 @@ const staffCoordinators = [
     linkedin: "https://www.linkedin.com/in/sivakami-nagappan-6794a71ab",
     banner: b9
   },
+  {
+    name: "Tharinni Mai T N M",
+    photo: th, 
+    linkedin: "https://www.linkedin.com/in/tharinni-mai-t-n-m-2327b8146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    banner: b9
+  },
 ];
 
 const studentCoordinators = [
   {
     name: "Vishwa",
-    photo: "https://via.placeholder.com/150", // Replace with actual photo URL
-    linkedin: "https://www.linkedin.com/in/alice-brown",
+    photo: vishwa,
+    linkedin: "https://www.linkedin.com/in/vishwa-m-494866333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     banner: b6
    
   },

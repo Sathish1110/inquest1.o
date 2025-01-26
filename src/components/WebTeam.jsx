@@ -4,7 +4,7 @@ import sathish from '../assets/sathish.jpg';
 import b1 from '../assets/b1.jpg';
 import b3 from '../assets/b3.jpg';
 import b2 from '../assets/b2.jpg';
-import selva from '../assets/selva.jpg';
+import selva from '../assets/selva4.jpg';
 import b4 from '../assets/b4.jpg';
 import b5 from '../assets/b5.jpg';
 import b6 from '../assets/b6.jpg';
@@ -18,21 +18,23 @@ import kamali from '../assets/kamali.jpg'
 import jayashree from '../assets/jayashree.jpg'
 import saranya from '../assets/saranya.jpg'
 import rishi from '../assets/rishi.jpg'
-import mohamed from '../assets/mohamed.jpg'
+import mohamed from '../assets/aravinth.jpg'
+import pavitharn from '../assets/pavitharn.jpg'
 
 const webDevelopers = [
+  {
+    name:"SELVAMANIKANDAN S",
+    bannerImg: b3, 
+    profileImg: selva, 
+    linkedin: "https://www.linkedin.com/in/selvamanikandan-s-8792b3250"
+  },
   {
     name: "SATHISH WARAN S",
     bannerImg: b1, 
     profileImg: sathish, 
     linkedin: "https://www.linkedin.com/in/sathish-waran-s-165661257"
   },
-  {
-    name: "SELVAMANIKANDAN S",
-    bannerImg: b3, 
-    profileImg: selva, 
-    linkedin: "https://www.linkedin.com/in/selvamanikandan-s-8792b3250"
-  },
+  
   {
     name: "ASWIN A",
     bannerImg: b4, 
@@ -64,7 +66,7 @@ const mediateam = [
     name: "Rishi kumar S S",
     bannerImg: b1, 
     profileImg: rishi, 
-    linkedin: "https://www.linkedin.com/in/rishi-kumar-16a3b5276"
+    linkedin: "https://www.linkedin.com/in/rishi-kumar-s-s-45661a2b7/"
   },
   {
     name: "Saranya P",
@@ -79,10 +81,16 @@ const mediateam = [
     linkedin: "https://www.linkedin.com/in/jayashree-t-103518257/"
   },
   {
-    name: "MOHAMED SHAFEEQ S S",
+    name: "Aravinthan S",
     bannerImg: b4, 
     profileImg: mohamed, 
-    linkedin: "https://www.linkedin.com/in/mohamed-shafeeq-0770a9258"
+    linkedin: "https://www.linkedin.com/in/aravinthan-saravanan-7b3655257"
+  },
+  {
+    name: "Pavithran M",
+    bannerImg: b1, 
+    profileImg: pavitharn, 
+    linkedin: "https://www.linkedin.com/in/pavithran-m-a77b20296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
 ];
 

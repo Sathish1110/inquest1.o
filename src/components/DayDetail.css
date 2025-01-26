@@ -46,6 +46,11 @@
   color: white;
   border-radius: 8px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
 }
 
 .description-container h1 {
@@ -56,7 +61,18 @@
   font-size: 18px;
   line-height: 1.6;
 }
-
+.register-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; /* Space from the description */
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Allow the button to fit the content */
+}
 .footer {
   text-align: center;
   padding: 20px;
@@ -93,7 +109,11 @@
   .description-container {
     padding: 15px;
   }
-
+  .register-button {
+    width: 80%; /* Make the button take most of the screen width on smaller screens */
+    max-width: 300px; /* Add a max width for better control */
+    font-size: 14px; /* Adjust button font size on smaller screens */
+  }
   .description-container h1 {
     font-size: 24px; /* Adjust the heading size for smaller screens */
   }
@@ -107,7 +127,11 @@
   .split-screen {
     padding: 10px;
   }
-
+  .register-button {
+    width: 100%; /* Make the button take full width on very small screens */
+    max-width: none; /* Remove max width */
+    font-size: 14px; /* Keep button text small */
+  }
   .description-container h1 {
     font-size: 20px; /* Further reduce the heading size for very small screens */
   }

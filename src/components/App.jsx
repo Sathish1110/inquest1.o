@@ -7,7 +7,7 @@ import About from './about';
 import ContactUs from './ContactUs';
 import DayDetail from './DayDetail';
 import Footer from './Footer';
-import inquesta from '../assets/inquesta.png';
+import inquesta from '../assets/8.png';
 import background1 from '../assets/background1.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,7 +16,7 @@ function Home({ aboutRef, contactRef }) {
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-02T00:00:00").getTime(); // Updated event date
+    const eventDate = new Date("2025-02-05T00:00:00").getTime(); // Updated event date
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -63,13 +63,13 @@ function Home({ aboutRef, contactRef }) {
 
       <div className='content'>
         <div style={{ marginBottom: '30px' }}>
-          <h1 style={{ fontSize: '45px' }} data-aos="zoom-in" data-aos-duration="1800">
+        <h1 data-aos="zoom-in" data-aos-duration="1800">
             SRI SAIRAM ENGINEERING COLLEGE
-          </h1>
-          <h2 data-aos="flip-up" data-aos-duration="1200" data-aos-delay="1000">&</h2>
-          <h1 style={{ fontSize: '45px' }} data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="1500">
-            NDLI CLUB
-          </h1>
+        </h1>
+        <h2 data-aos="flip-up" data-aos-duration="1200" data-aos-delay="1000">&</h2>
+        <h1 data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="1500">
+           NDLI CLUB
+        </h1>
         </div>
 
         <h2 style={{ marginBottom: '25px' }} data-aos="flip-down" data-aos-duration="1500" data-aos-delay="2200">
@@ -84,7 +84,7 @@ function Home({ aboutRef, contactRef }) {
           {timeLeft.message ? (
             <p>{timeLeft.message}</p>
           ) : (
-            <p style={{ fontSize: '45px' }}>
+            <p>
               {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
             </p>
           )}
@@ -141,7 +141,7 @@ const App = () => {
               <Home aboutRef={aboutRef} contactRef={contactRef} />
               <div ref={aboutRef}><About /></div>
               <div ref={contactRef}><ContactUs /></div>
-              <Footer /> {/* Footer included here */}
+              <Footer /> 
             </>
           }
         />

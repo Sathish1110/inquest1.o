@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';  // Import Link from React Router
 import './Event.css'; 
 import background from '../assets/Eventbg1.mp4';
-import d1 from '../assets/day1.png';
-import d2 from '../assets/day2.png';
-import d3 from '../assets/day3.png';
-import d4 from '../assets/day4.png';
+import d1 from '../assets/d1t.png';
+import d2 from '../assets/d1.png';
+import d3 from '../assets/d2.png';
+import d4 from '../assets/d3.png';
+import d5 from '../assets/d4.png'; // Import Day 5 image
+import d6 from '../assets/d5.jpg';
 
 const Event = () => {
   return (
@@ -48,6 +50,17 @@ const Event = () => {
           <div className="event">
             <Link to="/event/day/4"> {/* Link to Day 4 details page */}
               <img src={d4} alt="Day 4" />
+            </Link>
+          </div>
+          {/* Add the Day 5 event */}
+          <div className="event">
+            <Link to="/event/day/5"> {/* Link to Day 5 details page */}
+              <img src={d5} alt="Day 5" />
+            </Link>
+          </div>
+          <div className="event">
+            <Link to="/event/day/6"> {/* Link to Day 5 details page */}
+              <img src={d6} alt="Day 6" />
             </Link>
           </div>
         </div>

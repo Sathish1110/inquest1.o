@@ -14,24 +14,24 @@ html, body {
 
 .hamburger-menu {
   position: absolute;
-  top: 20px; /* Adjust the top position as needed */
-  left: 20px; /* Adjust the left position as needed */
+  top: 20px;
+  left: 20px;
   font-size: 30px;
   color: white;
   cursor: pointer;
-  z-index: 10; /* Ensure the hamburger is above the video */
+  z-index: 10;
 }
 
 .menu {
   position: absolute;
-  top: 60px; /* Adjust this to position the menu below the hamburger */
+  top: 60px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  z-index: 9; /* Ensure the menu is above the video but below the hamburger */
+  z-index: 9;
 }
 
 .menu ul {
@@ -56,43 +56,28 @@ html, body {
 }
 
 .content {
-  text-align: center; /* Centers text horizontally */
-  color: white; /* Set text color to white */
-  z-index: 1; /* Make sure text is above video */
+  text-align: center;
+  color: white;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Ensures proper alignment */
+  align-items: center;
   padding: 20px;
-  height: 100%; /* Ensure content fills the available height */
+  height: 100%;
   box-sizing: border-box;
 }
 
 .main-logo {
-  width: 70%; /* Adjust logo size to be percentage-based */
-  max-width: 700px; /* Ensure the logo doesn't grow too large */
-  margin-bottom: 5px;
+  width: 75%;
+  max-width: 600px;
 }
 
 .timer {
   font-size: 45px;
-  margin-bottom: 15px;
 }
 
-/* Footer styles */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  position: relative;  /* Ensure it stays at the bottom */
-  bottom: 0;
-}
-
-/* ------------------- Responsive Breakpoints ------------------- */
-
-/* Media query for large screens (default, screens larger than 1200px) */
+/* Responsive Styles */
 @media (max-width: 1200px) {
   .hamburger-menu {
     font-size: 28px;
@@ -103,40 +88,50 @@ html, body {
   }
 
   .main-logo {
-    width: 60%; /* Make logo slightly smaller */
+    width: 70%;
   }
 
   .timer {
     font-size: 40px;
+  }
+
+  .content h1, .content h2 {
+    font-size: 35px;
   }
 }
 
 /* Media query for tablet screens (max-width: 1024px) */
 @media (max-width: 1024px) {
   .hamburger-menu {
-    font-size: 24px; /* Slightly smaller icon */
-    left: 15px; /* Adjust left for smaller screen */
+    font-size: 24px;
+    left: 15px;
   }
 
   .menu {
-    top: 50px; /* Adjust menu for smaller screens */
+    top: 50px;
     left: 10px;
     padding: 15px;
   }
 
   .menu ul li a {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px;
   }
-  .content{
+
+  .content {
     font-size: medium;
   }
 
   .main-logo {
-    width: 50%; /* Smaller logo */
+    width: 60%;
   }
 
   .timer {
     font-size: 35px;
+  }
+
+  /* Make the headings smaller */
+  .content h1, .content h2 {
+    font-size: 30px;
   }
 }
 
@@ -155,12 +150,13 @@ html, body {
   .menu ul li a {
     font-size: 14px;
   }
-  .content{
+
+  .content {
     font-size: smaller;
   }
 
   .main-logo {
-    width: 50%; /* Adjust logo further for mobile */
+    width: 60%;
   }
 
   .timer {
@@ -170,6 +166,11 @@ html, body {
 
   .footer {
     padding: 15px;
+  }
+
+  /* Make the headings smaller */
+  .content h1, .content h2 {
+    font-size: 25px;
   }
 }
 
@@ -186,22 +187,28 @@ html, body {
   }
 
   .menu ul li a {
-    font-size: 12px; /* Even smaller font size */
+    font-size: 12px;
   }
-  .content{
+
+  .content {
     font-size: x-small;
   }
 
   .main-logo {
-    width: 70%; /* Keep logo size proportional on small screens */
+    width: 70%;
   }
 
   .timer {
-    font-size: 25px; /* Further reduce timer font size */
+    font-size: 25px;
     margin-top: 10px;
   }
 
   .footer {
     padding: 10px;
+  }
+
+  /* Make the headings smaller */
+  .content h1, .content h2 {
+    font-size: 20px;
   }
 }
