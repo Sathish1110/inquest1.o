@@ -15,6 +15,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import subashree from '../assets/subashree.jpg' 
 import kamali from '../assets/kamali.jpg'
+import ashwin from '../assets/ashwin.jpg'
 import jayashree from '../assets/jayashree.jpg'
 import saranya from '../assets/saranya.jpg'
 import rishi from '../assets/rishi.jpg'
@@ -38,7 +39,7 @@ const webDevelopers = [
   {
     name: "ASWIN A",
     bannerImg: b4, 
-    profileImg: "https://example.com/profile-bob.jpg", 
+    profileImg: ashwin, 
     linkedin: "https://www.linkedin.com/in/a-aswin/"
   },
   {

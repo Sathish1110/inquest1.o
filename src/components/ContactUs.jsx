@@ -7,6 +7,7 @@ import sivagami from '../assets/sivagamimam.jpg'
 import th from '../assets/th.jpg'
 import b1 from '../assets/b1.jpg'
 import roshini from '../assets/roshini.png'
+import adithya from '../assets/adithya.jpg'
 import b3 from '../assets/b3.jpg'
 import b4 from '../assets/b4.jpg'
 import b6 from '../assets/b6.jpg'
@@ -40,25 +41,24 @@ const studentCoordinators = [
     banner: b6
    
   },
-  {
-    name: "Roshini",
-    photo: roshini, // Replace with actual photo URL
-    linkedin: "https://www.linkedin.com/in/roshini-r-a9a983258/",
-    banner: b3
-  },
-  {
-    name: "Praveen",
-    photo: praveen, // Replace with actual photo URL
-    linkedin: "https://www.linkedin.com/in/praveen-thukaram-9219a4255",
-    banner: b1
-  },
-  {
-    name: "Mahathi",
-    photo:  mahati, // Replace with actual photo URL
-    linkedin: "https://www.linkedin.com/in/mahathi-s-v-a79337263",
-    banner: b8
-  },
+  
 ];
+const eventCoordinators = [
+    {
+      name: "Roshini",
+      photo: roshini,
+      linkedin: "hhttps://www.linkedin.com/in/roshini-r-a9a983258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      banner: b6
+     
+    },
+    {
+      name: "Aditya",
+      photo: adithya,
+      linkedin: "https://www.linkedin.com/in/aditya-r-869819254",
+      banner: b6
+     
+    },
+]
 
 const ContactUs = () => {
   useEffect(() => {
@@ -87,12 +87,31 @@ const ContactUs = () => {
 
       <br /><br />
 
-      <h2>Student Coordinators</h2>
+      <h2>Student Coordinator</h2>
       <br /><br />
 
       <center>
       <div className="coordinator-grid">
         {studentCoordinators.map((coordinator, index) => (
+          <div className="coordinator-card" key={index} data-aos="flip-up" data-aos-duration="1800">
+            <img src={coordinator.photo} alt={coordinator.name} className='profile'/>
+            
+            <img src={coordinator.banner} alt="" className='banner'/>
+           
+            <a href={coordinator.linkedin} target="_blank" rel="noopener noreferrer">
+              <p>{coordinator.name}</p>
+            </a>
+          </div>
+        ))}
+      </div>
+      </center>
+      <br /><br />
+      <h2>Event Coordinators</h2>
+      <br /><br />
+
+      <center>
+      <div className="coordinator-grid">
+        {eventCoordinators.map((coordinator, index) => (
           <div className="coordinator-card" key={index} data-aos="flip-up" data-aos-duration="1800">
             <img src={coordinator.photo} alt={coordinator.name} className='profile'/>
             
