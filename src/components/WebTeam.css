@@ -33,25 +33,28 @@
 }
 
 .team {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .member {
   width: 30%;
-  height: 300px;
+  height: 320px;
   background-color: black;
   position: relative;
-  margin-bottom: 5px;
-  gap: 2px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
+  padding: 10px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .member:hover {
@@ -61,26 +64,34 @@
 }
 
 .member h3 {
-  color: black;
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  z-index: 2;
   color: wheat;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .member .b {
   background-color: black;
   border: 2px solid aqua;
   position: absolute;
-  top: 70%;
+  bottom: 15px;
   left: 50%;
-  z-index: 2;
+  transform: translateX(-50%);
   color: aqua;
-  padding: 10px 20px; 
-  cursor: pointer; 
+  padding: 8px 15px;
+  cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 .member .b a {
@@ -89,16 +100,16 @@
 }
 
 .member .b:hover {
-  background-color: aqua; 
+  background-color: aqua;
   color: black;
 }
 
 .member .b a:hover {
-  color: black; 
+  color: black;
 }
 
 .member .b:active {
-  background-color: lightblue; 
+  background-color: lightblue;
   color: black;
 }
 
@@ -108,21 +119,21 @@
 
 .member .banner {
   width: 100%;
-  height: 40%;
+  height: 35%;
   object-fit: cover;
-  padding: 15px;
 }
 
 .member .profile {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: black;
   z-index: 2;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  padding: 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
   transition: transform 0.3s ease;
 }
 
@@ -130,14 +141,41 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 1955px) {
+/* Responsive Adjustments */
+
+@media (max-width: 1200px) {
   .member {
-    width: 48%; 
+    width: 48%;
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .member {
-    width: 98%;
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .member h3 {
+    font-size: 1rem;
+    top: 45%;
+    left: 50%;
+    width: 80%;
+    white-space: normal;
+  }
+
+  .member .b {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .member .profile {
+    width: 80px;
+    height: 80px;
   }
 }
