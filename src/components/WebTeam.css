@@ -148,7 +148,7 @@
   }
 
   .member h3 {
-    top: 70%;  /* Adjusted the position to be more flexible */
+    top: 60%;  /* Adjusted the position to be more flexible */
     left: 50%;
     transform: translate(-50%, -50%);  /* Center the text */
     font-size: 1.0rem;  /* Adjust font size for smaller screens */
