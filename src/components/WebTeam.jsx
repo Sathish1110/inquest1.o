@@ -76,7 +76,7 @@ const mediateam = [
     linkedin: "https://www.linkedin.com/in/saranyaa-palaniappan-927b15258/"
   },
   {
-    name: "⁠Jayashree",
+    name: "⁠Jayashree T",
     bannerImg: b4, 
     profileImg: jayashree, 
     linkedin: "https://www.linkedin.com/in/jayashree-t-103518257/"
