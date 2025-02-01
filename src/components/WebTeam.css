@@ -1,3 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.web-team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
+  gap: 40px;
+  position: relative;
+}
+
+.web-team h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.8), 0 0 20px rgba(0, 114, 255, 0.6);
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.web-team h1:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgba(0, 198, 255, 1), 0 0 30px rgba(0, 114, 255, 0.8);
+}
+
+.team {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 30px;
+}
+
+.member {
+  width: 30%;
+  height: 300px;
+  background-color: black;
+  position: relative;
+  margin-bottom: 5px;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 5px rgba(173, 216, 230, 0.8);
+  border: 2px solid lightblue;
+}
+
+.member h3 {
+  color: black;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  z-index: 2;
+  color: wheat;
+}
+
+.member .b {
+  background-color: black;
+  border: 2px solid aqua;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 2;
+  color: aqua;
+  padding: 10px 20px; 
+  cursor: pointer; 
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.member .b a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.member .b:hover {
+  background-color: aqua; 
+  color: black;
+}
+
+.member .b a:hover {
+  color: black; 
+}
+
+.member .b:active {
+  background-color: lightblue; 
+  color: black;
+}
+
+.member .b a:active {
+  color: black;
+}
+
+.member .banner {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  padding: 15px;
+}
+
+.member .profile {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: black;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  padding: 8px;
+  transition: transform 0.3s ease;
+}
+
+.member:hover .profile {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1955px) {
+  .member {
+    width: 48%; 
+  }
+}
+
+/* @media (max-width: 1150px) {
+  .member {
+    width: 98%;
+  }
+} */
 @media (max-width: 1150px) {
   .member {
     width: 98%;
