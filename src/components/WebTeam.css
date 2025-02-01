@@ -151,7 +151,7 @@
     top: 50%;  /* Adjusted the position to be more flexible */
     left: 50%;
     transform: translate(-50%, -50%);  /* Center the text */
-    font-size: 0.5rem;  /* Adjust font size for smaller screens */
+    font-size: 1.0rem;  /* Adjust font size for smaller screens */
   }
 
   .member .b {
