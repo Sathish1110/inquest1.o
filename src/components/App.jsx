@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Event from './Event';
 import WebTeam from './WebTeam';
-import About from './about';
+import About from './About';
 import ContactUs from './ContactUs';
 import DayDetail from './DayDetail';
 import Footer from './Footer';
