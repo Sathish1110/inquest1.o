@@ -163,7 +163,7 @@
 
   .member .profile {
     top: 10%;  /* Adjust position of profile image */
-    left: 10%;
+    center: 50%;
     width: 100px;  /* Adjust the profile size for smaller screens */
     height: 100px;
   }
