@@ -63,7 +63,7 @@ const dayDetails = {
         linkedin: 'https://www.linkedin.com/in/devadharshini-s-7b7522257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       },
       {
-        name: 'Cyril  bendict',
+        name: 'Cyril Benedict P S',
         profile: c,
         banner: b9,
         linkedin: 'https://www.linkedin.com/in/cyril-bendict-ps-697a58257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -95,13 +95,13 @@ const dayDetails = {
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
       {
-        name: 'Mahathi ',
+        name: 'Mahathi S V',
         profile: m,
         banner: b9,
         linkedin: 'https://www.linkedin.com/in/mahathi-s-v-a79337263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       },
       {
-        name: 'Harshavaradhan ',
+        name: 'Harshavardhan M V',
         profile: harha,
         banner: b9,
         linkedin: 'https://www.linkedin.com/in/harshavardhan-m-venkataraman-64965b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -114,13 +114,13 @@ const dayDetails = {
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
       {
-        name: 'Amrudha ',
+        name: 'Amrudha R',
         profile: ar,
         banner: b9,
         linkedin: 'https://www.linkedin.com/in/amrudha-rangarajan-5a593627a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       },
       {
-        name: 'Saranyaa',
+        name: 'Saranyaa P',
         profile: s,
         banner: b9,
         linkedin: 'www.linkedin.com/in/saranyaa-palaniappan-927b15258',
@@ -133,13 +133,13 @@ const dayDetails = {
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
       {
-        name: 'Pragadeshwaran',
+        name: 'Pragadeshwaran K B',
         profile: p,
         banner: b9,
         linkedin: 'https://www.linkedin.com/in/pragadeshwaransprofile/',
       },
       {
-        name: 'Reshma ',
+        name: 'Reshma V',
         profile: r,
         banner: b9,
         linkedin: 'https://www.linkedin.com/in/reshma-v-072184259',
