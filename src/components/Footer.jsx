@@ -19,8 +19,8 @@ const Footer = () => {
           </div>
           <h3 style={{ color: "aqua" }}>Contact us</h3>
           <div className="names">
-            <p>Praveen - +91 72004 29405</p>
             <p>Vishwa - +91 96005 10732</p>
+            <p>Roshini - +91 63691 93024</p>
           </div>
         </div>
       </div>
