@@ -199,9 +199,16 @@ const DayDetail = () => {
         <div className="description-container">
           <h1>ITINERARY</h1>
           <p>{currentDayDetails.description}</p>
-          <a href={currentDayDetails.formUrl} target="_blank" rel="noopener noreferrer">
+          {dayId !== "1" && dayId !== "2" ? (
+            <a href={currentDayDetails.formUrl} target="_blank" rel="noopener noreferrer">
+              <button className="register-button">Register</button>
+            </a>
+          ) : (
+            <button className="register-button" disabled>Only for School Students</button>
+          )}
+{/*           <a href={currentDayDetails.formUrl} target="_blank" rel="noopener noreferrer">
             <button className="register-button">Register</button>
-          </a>
+          </a> */}
         </div>
       </div>
 
