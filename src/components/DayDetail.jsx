@@ -35,7 +35,7 @@ const dayDetails = {
   1: {
     description: 'சிந்தனையின் விதைகளை நட்டுப் புதிய உலகங்களை கண்டுபிடிக்கலாம்! தமிழ் மரபும் நவீன எண்ணங்களும் இணையும் சிறப்பு நிகழ்வு.',
     poster: dayPosters[1],
-    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
+    // formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
       {
         name: 'Durga T',
@@ -54,7 +54,7 @@ const dayDetails = {
   2: {
     description: 'Embark on a quest through books and beyond! Discover knowledge and ignite curiosity in this exciting literary challenge.',
     poster: dayPosters[2],
-    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
+    // formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
       {
         name: 'Devadharshini S',
