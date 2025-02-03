@@ -18,7 +18,7 @@ import mu from '../assets/muthurama.jpg';
 import p from '../assets/pragadesh.jpg';
 import r from '../assets/reshma.jpg';
 import s from '../assets/saranya.jpg';
-import sw from '../assets/sathish1.jpg';
+import sw from '../assets/sathish2.jpg';
 import b9 from '../assets/b9.jpg'; 
 import './DayDetail.css';
 
