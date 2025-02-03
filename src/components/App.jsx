@@ -16,7 +16,7 @@ function Home({ aboutRef, contactRef }) {
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-12T00:00:00").getTime(); // Updated event date
+    const eventDate = new Date("2025-02-13T00:00:00").getTime(); // Updated event date
 
     const updateCountdown = () => {
       const now = new Date().getTime();
