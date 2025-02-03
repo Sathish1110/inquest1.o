@@ -26,7 +26,7 @@ const staffCoordinators = [
     banner: b9
   },
   {
-    name: "Tharinni Mai T N M",
+    name: "Dr.Tharinni Mai",
     photo: th, 
     linkedin: "https://www.linkedin.com/in/tharinni-mai-t-n-m-2327b8146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     banner: b9
@@ -35,7 +35,7 @@ const staffCoordinators = [
 
 const studentCoordinators = [
   {
-    name: "Vishwa",
+    name: "Vishwa M",
     photo: vishwa,
     linkedin: "https://www.linkedin.com/in/vishwa-m-494866333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     banner: b6
@@ -45,14 +45,14 @@ const studentCoordinators = [
 ];
 const eventCoordinators = [
     {
-      name: "Roshini",
+      name: "Roshini R",
       photo: roshini,
       linkedin: "hhttps://www.linkedin.com/in/roshini-r-a9a983258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       banner: b6
      
     },
     {
-      name: "Aditya",
+      name: "Aditya R",
       photo: adithya,
       linkedin: "https://www.linkedin.com/in/aditya-r-869819254",
       banner: b6
