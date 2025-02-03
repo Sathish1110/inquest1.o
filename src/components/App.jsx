@@ -7,7 +7,7 @@ import About from './About';
 import ContactUs from './ContactUs';
 import DayDetail from './DayDetail';
 import Footer from './Footer';
-import inquesta from '../assets/Inquesta Main Poster.jpg';
+import inquesta from '../assets/8.png';
 import background1 from '../assets/background1.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
