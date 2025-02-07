@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import d1 from '../assets/Template (1).jpg';
+import d1 from '../assets/Template (1).png';
 import d2 from '../assets/dpe1.jpg';
 import d3 from '../assets/dp2.jpg';
 import d4 from '../assets/dp3.jpg';
