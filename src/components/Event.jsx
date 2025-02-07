@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';  // Import Link from React Router
 import './Event.css'; 
 import background from '../assets/Eventbg1.mp4';
-import d1 from '../assets/dT1.png';
+import d1 from '../assets/d1t.png';
 import d2 from '../assets/d1.png';
 import d3 from '../assets/d2.png';
 import d4 from '../assets/d3.png';
