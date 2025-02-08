@@ -5,7 +5,7 @@ import d2 from '../assets/dpe1.jpg';
 import d3 from '../assets/dp2.jpg';
 import d4 from '../assets/dp3.jpg';
 import d5 from '../assets/dp4.jpg';
-import d6 from '../assets/Day5.jpg';
+import d6 from '../assets/Day 5.jpg';
 import background from '../assets/Eventbg2.mp4';
 import ar from '../assets/amrudha.jpg';
 import c from '../assets/cyril.jpg';
