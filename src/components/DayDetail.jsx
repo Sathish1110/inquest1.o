@@ -5,7 +5,7 @@ import d2 from '../assets/dpe1.jpg';
 import d3 from '../assets/dp2.jpg';
 import d4 from '../assets/dp3.jpg';
 import d5 from '../assets/dp4.jpg';
-import d6 from '../assets/dp5.jpg';
+import d6 from '../assets/Day5.jpg';
 import background from '../assets/Eventbg2.mp4';
 import ar from '../assets/amrudha.jpg';
 import c from '../assets/cyril.jpg';
@@ -128,7 +128,7 @@ const dayDetails = {
     ],
   },
   6: {
-    description: 'Event 1: Each team will be given a few plots, they should build and narrate a story around it.Event 2: Selected participants will be miming their own story.',
+    description: 'Event 1: Each team will be given a few plots, they should build and narrate a story around it. \n Event 2: Selected participants will be miming their own story.',
     poster: dayPosters[6],
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
