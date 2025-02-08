@@ -128,8 +128,7 @@ const dayDetails = {
     ],
   },
   6: {
-    description: 'Event 1: Each team will be given a few plots, they should build and narrate a story around it.
-      Event 2: Selected participants will be miming their own story.',
+    description: 'Event 1: Each team will be given a few plots, they should build and narrate a story around it.Event 2: Selected participants will be miming their own story.',
     poster: dayPosters[6],
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc89PIJqCdmbWCRVroevZB6aLdr25K0r6Agn4eF_vCSOGPvIA/viewform?usp=header',
     teamLeads: [
